@@ -1,0 +1,151 @@
+<!doctype html>
+<!-- Written by Karman Wong -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shop</title>
+<link rel="stylesheet" type="text/css" href="./css/journal.css"/>
+<script type = "text/javascript" src = "function.js"></script>
+</head>
+<body onload="todaysDate()">
+<h1 class = "header">Mind to Matter Stationery</h1>
+
+<div class = "navigation">
+<ul class = "buttons">
+  <li><a href="index.html"><img src = "./imgs/home.png" alt = "Homepage"></a></li>
+  <li><a href="products.html"><img src = "./imgs/catalog.png" alt = "Product Catalog"></li>
+  <li><a href="bulletjournal.html"><img src = "./imgs/system.png" alt = "The Bullet Journal System"></a>
+  </li>
+  <li><a href="sales.html"><img src = "./imgs/shop.png" alt = "Shop"></a></li>
+  <li><a href="about.html"><img src = "./imgs/aboutus.png" alt = "About Us"></a></li>
+</ul>
+</div>
+
+<div class = "content">
+<h2>Shop Our Products</h2>
+
+Are you ready to start journaling? Fill out the following form to place an order with <span class="companyname">Mind to Matter</span>.
+
+<form action= "sales.html">
+<fieldset>
+	<legend>Customer Information</legend>
+	<div class = "formdata">
+	<label>First Name:</label>
+	<input type = "text" id = "firstname" />
+	</div>
+	<div class = "formdata">
+	<label>Last Name:</label>
+	<input type = "text" id = "lastname" />
+	</div>
+	<div class = "formdata">
+	<label>Phone Number:</label>
+	<input type = "text" id = "phone" />
+	</div>
+	<div class = "formdata">
+	<label>Email Address:</label>
+	<input type = "text" id = "email" />
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Shipping Information</legend>
+	<div class = "formdata">
+	<label>Address:</label>
+	<input type = "text" id = "address" />
+	</div>
+	<div class = "formdata">
+	<label>City:</label>
+	<input type = "text" id = "city" />
+	</div>
+	<div class = "formdata">
+	<label>Province/Territory:</label>
+	<select id = "provinceterritory">
+		<option value = "Alberta">Alberta</option>
+		<option value = "BritishColumbia">British Columbia</option>
+		<option value = "Manitoba">Manitoba</option>
+		<option value = "NewBrunswick">New Brunswick</option>
+		<option value = "Newfoundland">Newfoundland and Labrador</option>
+		<option value = "Northwest">Northwest Territories</option>
+		<option value = "NovaScotia">Nova Scotia</option>
+		<option value = "Nunavut">Nunavut</option>
+		<option value = "Ontario">Ontario</option>
+		<option value = "PEI">Prince Edward Island</option>
+		<option value = "Quebec">Quebec</option>
+		<option value = "Saskatchewan">Saskatchewan</option>
+		<option value = "Yukon">Yukon</option>
+	</select>
+	</div>
+	<div class = "formdata">
+	<label>Postal Code:</label>
+	<input type = "text" id = "postalcode" />
+	</div>
+</fieldset>
+
+<div class = "formdata">
+<label>What products would you like to order?</label>
+</div>
+<div class = "formdata">
+<textarea id = "order" rows = "10" cols = "50" maxlength = "1000"></textarea>
+</div>
+
+<fieldset>
+	<legend>Payment Information</legend>
+	<div class = "formdata">
+	<label>Credit Card Type</label>
+	<input type = "radio" name = "cardtype" value = "Visa" /> Visa
+	<input type = "radio" name = "cardtype" value = "MasterCard" /> MasterCard
+	<input type = "radio" name = "cardtype" value = "Amex" /> American Express
+	<input type = "radio" name = "cardtype" value = "Discover" /> Discover
+	</div>
+	
+	<div class = "formdata">
+	<label>Name on Card:</label>
+	<input type = "text" id = "cardholder" value = "Jane Doe" />
+	</div>
+	
+	<div class = "formdata">
+	<label>Credit Card Number:</label>
+	<input type = "text" id = "cardnumber" value = "1234 5678 9101 1112" />
+	</div>
+	
+	<div class = "formdata">
+	<label>Expiration:</label>
+	<input type = "text" id = "expiration" value = "MM / YY" />
+	</div>
+	
+	<div class = "formdata">
+	<label>CVV:</label>
+	<input type = "text" id = "cvv" value = "123" />
+	</div>
+	
+	<div class = "formdata">
+	<label>Shipping Options</label>
+	<input type = "radio" name = "shippingoption" value = "regular" />Regular (Included)
+	<input type = "radio" name = "shippingoption" value = "express" />Express (Add $15.00)
+	</div>
+	
+	<div class = "formdata">
+	<label>Applicable Discounts</label>
+	<input type = "checkbox" id = "student" />Student/Teacher (10% off)
+	<input type = "checkbox" id = "senior" />Senior (15% off)
+	<input type = "checkbox" id = "affiliate" />Affiliate (10% off)
+	</div>
+</fieldset>
+
+<div class = "buttonfunctions">
+<input type = "submit" value = "Place Order" />
+<input type = "reset" value = "Clear Form" />
+</div>
+	
+</form>
+
+</div>
+
+<footer class = "footer">
+Today's date:
+<span id = "date"></span>
+&copy; Mind to Matter Stationery 2018
+</footer>
+
+</body>
+</html>
